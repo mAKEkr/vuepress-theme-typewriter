@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700|Roboto:400,500&amp;subset=korean');
+
+/*
+ * Iropke Batang (Korean)
+ * http://font.iropke.com/batang/
+ */
+@font-face {
+  font-family:'Iropke Batang';
+  font-style:normal;
+  font-weight:400;
+  src: url('https://cdn.jsdelivr.net/gh/makekr/font-iropke-batang@woff2/IropkeBatangM.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/makekr/font-iropke-batang@woff2/IropkeBatangM.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/makekr/font-iropke-batang@woff2/IropkeBatangM.ttf') format('truetype');
+}
+
+// @font-face {
+//   font-family:'RIDIBatang';
+//   src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+//   font-weight:normal;
+//   font-style:normal;
+// } 
+
+html,
+body {
+  font-family:'Noto Sans KR', 'Noto Serif KR';
+  text-rendering:optimizeLegibility;
+}
+
+body {
+  overflow-y:scroll;
+}
+
+.layout-fluid-container {
+  max-width:1152px;
+  width:100%;
+  margin:0 auto;
+  padding:0 24px;
+  box-sizing:border-box;
+}
+
+a {
+  color:$oc-indigo-9;
+
+  &:visited {
+    color:$oc-violet-9;
+  }
+}
+
+.page-content div[class*="language-"] {
+  line-height:1.6em;
+  font-size:14px;
+  background-color:#191f26;
+  color:#e6e1cf;
+  font-family:Consolas, Monaco, monospace;
+  border-radius:16px;
+  overflow:hidden;
+
+  &.line-numbers-mode {
+    position:relative;
+
+    & > pre {
+      margin:0 0 0 52px;
+    }
+
+    & > .line-numbers-wrapper {
+      width:52px;
+      height:100%; // windows scrollbar fix
+      text-align:right;
+      box-sizing:border-box;
+      position:absolute;
+      top:0;
+      left:0;
+      padding:1em;
+      color:lighten(#5c6773, 10%);
+      background-color:lighten(#191f26, 10%);
+    }
+  }
+
+  pre > code {
+    display:block;
+    line-height:1.6em;
+    font-size:14px;
+    background-color:#191f26;
+    color:#e6e1cf;
+    overflow-x:auto;
+    padding:1em;
+
+    & > .comment,
+    & > .quote,
+    & > .meta {
+      color:#5c6773;
+      font-style:italic;
+    }
+
+    & > .variable,
+    & > .template-variable,
+    & > .attribute,
+    & > .attr,
+    & > .regexp,
+    & > .link,
+    & > .selector-id,
+    & > .selector-class {
+      color:#ff7733;
+    }
+
+    & > .number,
+    & > .builtin-name,
+    & > .literal,
+    & > .type,
+    & > .params {
+      color:#ffee99;
+    }
+
+    & > .string,
+    & > .bullet {
+      color:#b8cc52;
+    }
+
+    & > .title,
+    & > .built_in,
+    & > .section {
+      color:#ffb454;
+    }
+
+    & > .keyword,
+    & > .selector-tag,
+    & > .symbol,
+    & > .function,
+    & > .operator {
+      color:#ff7733;
+    }
+
+    & > .name {
+      color:#36a3d9;
+    }
+
+    & > .tag {
+      color:#00568d;
+    }
+
+    & > .emphasis {
+      font-style:italic;
+    }
+
+    & > strong {
+      font-weight:bold;
+    }
+  }
+}

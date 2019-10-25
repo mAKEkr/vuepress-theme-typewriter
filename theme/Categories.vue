@@ -1,0 +1,24 @@
+<template>
+  <layout-container>
+    <div class="layout-fluid-container">
+      <article
+        v-for="item in $frontmatterKey.list">
+        <header>
+          <h2>{{ item.name }}<span>({{ item.pages.length }})</span></h2>
+        </header>
+        <post-list :items="item.pages" />
+      </article>
+    </div>
+  </layout-container>
+</template>
+
+<script>
+  import PostList from '@source/.vuepress/components/Post/List.vue'
+
+  export default {
+    name: 'layout-category-list',
+    components: {
+      PostList
+    },
+  }
+</script>

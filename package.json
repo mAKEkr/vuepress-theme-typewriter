@@ -1,0 +1,30 @@
+{
+  "name": "vuepress-theme-typewriter",
+  "version": "1.0.0",
+  "description": "A VuePress Blog Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mAKEkr/vuepress-theme-typewriter.git"
+  },
+  "author": "mAKEkr <m@ake.kr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mAKEkr/vuepress-theme-typewriter/issues"
+  },
+  "homepage": "https://github.com/mAKEkr/vuepress-theme-typewriter#readme",
+  "dependencies": {
+    "@vuepress/plugin-active-header-links": "^1.2.0",
+    "@vuepress/plugin-blog": "^1.5.1",
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "@vuepress/plugin-pagination": "^1.0.0-alpha.0",
+    "dayjs": "^1.8.16",
+    "normalize.css": "^8.0.1",
+    "open-color": "^1.7.0",
+    "vuepress-plugin-medium-zoom": "^1.1.6",
+    "vuepress-plugin-nprogress": "^1.1.4"
+  }
+}
