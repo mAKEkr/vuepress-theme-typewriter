@@ -1,5 +1,5 @@
 <template>
-  <div id="post-toc" :class="{hide: this.active === false}">
+  <div id="post-toc" :class="{hide: this.active === false, sticky: this.stickyTop}">
     <ul>
       <li class="toc-level-1">
         <a href="#">처음</a>
@@ -22,34 +22,26 @@
     data () {
       return {
         active: true,
-        scrollEvent: false
+        stickyTop: false,
+        eventListener: null
       }
     },
     mounted () {
-      if (this.scrollEvent === false) {
-        window.addEventListener('scroll', this.onScroll)
-        this.scrollEvent = true
-      }
+      this.eventListener = window.addEventListener('scroll', this.onScrollEvent)
     },
     beforeDestroy () {
-      if (this.scrollEvent === true) {
-        window.removeEventListener('scroll', this.onScroll)
-        this.scrollEvent = false
-      }
+      window.removeEventListener('scroll', this.onScrollEvent)
     },
     methods: {
-      onScroll (event) {
-        throttle(function () {
-          console.log(event)
-          if (event.pageY > this.contentOffset() && this.active === true) {
-            this.active = false
-          } else if (event.pageY < this.contentOffset() && this.active === false) {
-            this.active = true
-          }
-        }, 300)
-      },
+      onScrollEvent: throttle(function (event) {
+        if (window.scrollY > this.contentOffset()) {
+          this.stickyTop = true
+        } else {
+          this.stickyTop = false
+        }
+      }, 300),
       contentOffset () {
-        return document.querySelector('.page-content').offsetTop + document.querySelector('.page-content').offsetHeight
+        return window.pageYOffset + document.querySelector('.page-header').getBoundingClientRect().top - 36
       },
       browserHeight () {
         return window.innerHeight
@@ -73,7 +65,7 @@
 
 <style lang="scss">
 #post-toc {
-  position:fixed;
+  position:absolute;
   margin-left:-220px;
   width:200px;
   opacity:0.3;
@@ -136,6 +128,11 @@
   &.hide {
     opacity:0;
     visibility:hidden;
+  }
+
+  &.sticky {
+    position:fixed;
+    top:36px;
   }
 }
 

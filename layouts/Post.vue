@@ -52,7 +52,7 @@
 .page-post {
   .layout-fluid-container {
     position:relative;
-    overflow:hidden;
+    // overflow:hidden;
   }
   
   .page-header {
