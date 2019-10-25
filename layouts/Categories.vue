@@ -2,7 +2,8 @@
   <layout-container>
     <div class="layout-fluid-container">
       <article
-        v-for="item in $frontmatterKey.list">
+        v-for="(item, index) in $frontmatterKey.list"
+        :key="index">
         <header>
           <h2>{{ item.name }}<span>({{ item.pages.length }})</span></h2>
         </header>

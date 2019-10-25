@@ -4,11 +4,12 @@
       <li class="toc-level-1">
         <a href="#">처음</a>
       </li>
-      <li v-for="item in $page.headers"
-          :class="`toc-level-${item.level}`">
+      <li v-for="(item, index) in $page.headers"
+        :key="index"
+        :class="`toc-level-${item.level}`">
         <a class="sidebar-link"
-           :class="{active: isActive(item.slug)}"
-           :href="`#${item.slug}`">{{ item.title }}</a>
+          :class="{active: isActive(item.slug)}"
+          :href="`#${item.slug}`">{{ item.title }}</a>
       </li>
     </ul>
   </div>
