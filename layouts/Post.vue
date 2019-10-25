@@ -16,7 +16,7 @@
       </div>
       <div class="page-footer">
         <post-navigator />
-        <comment class="page-footer-comment" />
+        <comment class="page-footer-comment" v-if="typeof $site.themeConfig.comment === 'object'" />
       </div>
     </div>
   </layout-container>
