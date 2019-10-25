@@ -22,8 +22,10 @@
     "@vuepress/plugin-google-analytics": "^1.2.0",
     "@vuepress/plugin-pagination": "^1.0.0-alpha.0",
     "dayjs": "^1.8.16",
+    "lodash.throttle": "^4.1.1",
     "normalize.css": "^8.0.1",
     "open-color": "^1.7.0",
+    "vuepress-plugin-container": "^2.1.0",
     "vuepress-plugin-medium-zoom": "^1.1.6",
     "vuepress-plugin-nprogress": "^1.1.4"
   }

@@ -15,6 +15,16 @@ module.exports = {
       componentsDir: [
         path.resolve(__dirname, 'components')
       ]
-    }]
+    }],
+    ['container', {
+      type: 'image',
+      before: imageType => `<figure class="image-block ${imageType}">`,
+      after: '</figure>'
+    }],
+    ['container', {
+      type: 'imageCaption',
+      before: '<figcaption>',
+      after: '</figcaption>'
+    }],
   ]
 }
