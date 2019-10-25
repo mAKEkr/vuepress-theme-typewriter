@@ -40,6 +40,7 @@
 
     &.active-header-cover {
       height:560px;
+      margin-bottom:36px;
     }
 
     & > .layout-header-cover {
