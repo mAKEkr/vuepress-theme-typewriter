@@ -2,9 +2,6 @@ const path = require('path')
 
 module.exports = {
   name: 'vuepress-theme-typewriter',
-  scss: {
-    data: '@import "@theme/styles/global-variables.scss";'
-  },
   layoutDir: 'theme',
   plugins: [
     '@vuepress/blog',
