@@ -2,8 +2,11 @@
   <footer id="layout-footer">
     <div class="layout-fluid-container">
       <p>
-        Powered by VuePress<br />
-        Copyright 2010-2019 AKE.kr all rights reserved.
+        Powered by VuePress
+        <template v-if="$site.themeConfig.copyright">
+          <br />
+          {{ $site.themeConfig.copyright }}
+        </template>
       </p>
       <div class="links">
         <a href="/feed.xml" target="_blank" v-if="$site.themeConfig.feed === true">
