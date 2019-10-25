@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import PostList from '@source/.vuepress/components/Post/List.vue'
+  import PostList from '@theme/components/Post/List.vue'
 
   export default {
     name: 'layout-category-list',

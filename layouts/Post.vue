@@ -23,9 +23,9 @@
 </template>
 
 <script>
-  import PostNavigator from '@source/.vuepress/components/Post/view/PostNavigator'
-  import Comment from '@source/.vuepress/components/Post/view/Comment'
-  import Toc from '@source/.vuepress/components/Post/view/TOC'
+  import PostNavigator from '@theme/components/Post/view/PostNavigator'
+  import Comment from '@theme/components/Post/view/Comment'
+  import Toc from '@theme/components/Post/view/TOC'
   import Dayjs from 'dayjs'
 
   export default {
