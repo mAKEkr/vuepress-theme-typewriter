@@ -153,20 +153,20 @@ a {
 @import "./components/post.scss";
 @import "./post.scss";
 
-@media (max-width:961px) {
+// @media (max-width:961px) {
+//   body {
+//     font-size:15px;
+//   }
+// }
+
+@media (max-width:769px) {
   body {
     font-size:15px;
   }
 }
 
-@media (max-width:769px) {
-  body {
-    font-size:14px;
-  }
-}
-
 @media (max-width:361px) {
   body {
-    font-size:13px;
+    font-size:14px;
   }
 }
