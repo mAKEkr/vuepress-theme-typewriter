@@ -1,2 +1,2 @@
-import '@theme/styles/global.scss'
 import 'normalize.css/normalize.css'
+import '@theme/styles/global.scss'

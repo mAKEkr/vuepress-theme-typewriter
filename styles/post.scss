@@ -8,7 +8,7 @@
   
   .page-header {
     h1.page-title {
-      font-size:46px;
+      font-size:2.875em;
       margin:0;
       word-break:break-all;
     }
@@ -22,7 +22,7 @@
     }
 
     h2.page-subtitle {
-      font-size:26px;
+      font-size:1.625em;
       color:$oc-gray-8;
       font-weight:500;
       margin:0;
@@ -32,8 +32,9 @@
 
   .page-content {
     font-family:'Iropke Batang';
-    font-size:14pt;
-    line-height:30px;
+    font-size:1.125em;
+    line-height:1.625em;
+    letter-spacing:0.02em;
     word-break:keep-all;
 
     h1, h2, h3, h4, h5, h6 {
@@ -45,7 +46,7 @@
       .header-anchor {
         visibility:hidden;
         width:24px;
-        font-size:14px;
+        font-size:0.875rem; // 14px
         background-color:$oc-gray-6;
         text-align:center;
         color:#fff;
@@ -62,39 +63,40 @@
     }
 
     h1 {
-      font-size:46px;
-      line-height:52px;
+      font-size:2.875em; // 46px
+      line-height:3.25rem; // 52px
     }
 
     h2 {
-      font-size:38px;
-      line-height:44px;
+      font-size:2.375em; // 38px
+      line-height:2.75rem; // 44px
     }
 
     h3 {
-      font-size:28px;
-      line-height:32px;
+      font-size:1.75em; // 28px
+      line-height:2rem; // 32px
     }
 
     h4 {
-      font-size:24px;
-      line-height:26px;
+      font-size:1.5em; // 24px
+      line-height:1.625rem; // 26px
     }
 
     h5 {
-      font-size:14pt;
-      line-height:18px;
+      font-size:1.125em; // 14pt(18px)
+      line-height:1.125rem; // 18px
     }
 
     ul {
-      padding-left:24px;
+      padding-left:1.5em;
+
       & > li {
-        font-size:20px;
-        line-height:32px;
+        font-size:1.125em; // 20px
+        line-height:1.75em; // 32px
 
         ul > li {
-          font-size:16px;
-          line-height:28px;
+          font-size:0.925em; // 16px
+          line-height:1.75em; // 28px
         }
       }
     }
@@ -111,7 +113,7 @@
       background-color:$oc-gray-1;
       padding:0 6px;
       border-radius:6px;
-      font-size:12px;
+      font-size:0.75em;
       font-family:Consolas, Monaco, monospace;
       vertical-align:top;
     }
@@ -135,6 +137,7 @@
 
       p {
         margin:0;
+        font-size:0.825em;
       }
 
       img {
@@ -142,7 +145,7 @@
       }
 
       figcaption {
-        margin:12px 0 0;
+        margin:0.75em 0 0;
         text-align:center;
       }
 
