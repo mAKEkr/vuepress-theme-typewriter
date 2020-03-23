@@ -16,12 +16,3 @@
     },
   }
 </script>
-
-<style lang="scss">
-  h2.category-header {
-    text-align:center;
-    text-transform:uppercase;
-    font-size:36px;
-    margin:0;
-  }
-</style>

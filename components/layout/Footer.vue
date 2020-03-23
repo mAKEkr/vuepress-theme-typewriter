@@ -9,7 +9,7 @@
         </template>
       </p>
       <div class="links">
-        <a href="/feed.xml" target="_blank" v-if="$site.themeConfig.feed === true">
+        <a :href="`/${$site.themeConfig.feed}`" target="_blank" v-if="typeof $site.themeConfig.feed === 'string'">
           <img src="../../assets/icon-feed.svg" alt="feed link" />
         </a>
         <a :href="`https://github.com/${$site.themeConfig.github}`" target="_blank" v-if="$site.themeConfig.github !== undefined">
@@ -25,31 +25,3 @@
     name: 'layout-footer'
   }
 </script>
-
-<style lang="scss">
-#layout-footer {
-  background-color:$oc-gray-0;
-  padding:6px 12px;
-  font-size:14px;
-
-  & > .layout-fluid-container {
-    display:flex;
-    flex-direction:row;
-  }
-
-  p {
-    margin:6px 18px 6px 0;
-    line-height:24px;
-  }
-
-  img {
-    width:32px;
-    height:32px;
-  }
-
-  div.links {
-    margin-left:auto;
-    align-self:center;
-  }
-}
-</style>

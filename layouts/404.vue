@@ -48,15 +48,15 @@ export default {
     }
     h1 {
       margin:0;
-      color:$oc-gray-8;
+      color:#343a40; // $oc-gray-8;
     }
     p {
-      color:$oc-gray-6;
+      color:#868e96; // $oc-gray-6;
 
       a {
         display:block;
         margin-top:4px;
-        color:$oc-gray-9;
+        color:#212529; // $oc-gray-9;
       }
     }
   }

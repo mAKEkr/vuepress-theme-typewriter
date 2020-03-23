@@ -20,20 +20,3 @@
     },
   }
 </script>
-
-<style lang="scss">
-.list-pagination {
-  display:flex;
-  flex-direction:column;
-  align-items: flex-end;
-  padding-bottom:36px;
-  text-transform:uppercase;
-
-  & > .prev,
-  & > .next {
-    text-decoration:none;
-    font-weight:600;
-    font-size:18pt;
-  }
-}
-</style>
