@@ -1,5 +1,5 @@
 # Typewriter
-Typewriter is Blog Theme based on VuePress. design focus on article.
+Typewriter is Blog Theme based on VuePress.
 
 support responsive design, comment service(utteranc.es)
 
@@ -17,9 +17,6 @@ yarn add vuepress-theme-typewriter # yarn
 open your VuePress Project, go to `.vuepress/config.js` and add these lines read comments.
 ``` javascript
 module.exports =
-  scss: { // this configuration required for color preset using in theme
-    data: '@import "@theme/styles/global-variables.scss";'
-  },
   themeConfig: {
     nav: [ // setting global header nav items
       {
@@ -39,3 +36,6 @@ module.exports =
 }
 
 ```
+
+## Changelog
+[go to Release Page](https://github.com/mAKEkr/vuepress-theme-typewriter/releases)
