@@ -86,6 +86,10 @@ a {
     overflow-x:auto;
     padding:1em;
   }
+
+  & + div[class*="language-"] {
+    margin-top:2em;
+  }
 }
 
 @import "./code.scss";
