@@ -85,79 +85,13 @@ a {
     color:#e6e1cf;
     overflow-x:auto;
     padding:1em;
-
-    & > .comment,
-    & > .quote,
-    & > .meta {
-      color:#5c6773;
-      font-style:italic;
-    }
-
-    & > .variable,
-    & > .template-variable,
-    & > .attribute,
-    & > .attr,
-    & > .regexp,
-    & > .link,
-    & > .selector-id,
-    & > .selector-class {
-      color:#ff7733;
-    }
-
-    & > .number,
-    & > .builtin-name,
-    & > .literal,
-    & > .type,
-    & > .params {
-      color:#ffee99;
-    }
-
-    & > .string,
-    & > .bullet {
-      color:#b8cc52;
-    }
-
-    & > .title,
-    & > .built_in,
-    & > .section {
-      color:#ffb454;
-    }
-
-    & > .keyword,
-    & > .selector-tag,
-    & > .symbol,
-    & > .function,
-    & > .operator {
-      color:#ff7733;
-    }
-
-    & > .name {
-      color:#36a3d9;
-    }
-
-    & > .tag {
-      color:#00568d;
-    }
-
-    & > .emphasis {
-      font-style:italic;
-    }
-
-    & > strong {
-      font-weight:bold;
-    }
   }
 }
 
+@import "./code.scss";
 @import "./components/layout.scss";
 @import "./components/post.scss";
 @import "./post.scss";
-
-// @media (max-width:961px) {
-//   body {
-//     font-size:15px;
-//   }
-// }
 
 @media (max-width:769px) {
   body {
