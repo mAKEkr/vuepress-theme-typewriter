@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-typewriter",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A VuePress Blog Theme",
   "main": "index.js",
   "scripts": {
