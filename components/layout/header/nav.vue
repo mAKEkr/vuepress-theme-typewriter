@@ -11,7 +11,7 @@
 </template>
 
 <script>
-export defualt {
+export default {
   name: 'layout-header-nav'
 }
 </script>
